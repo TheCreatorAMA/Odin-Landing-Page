@@ -47,13 +47,35 @@ li {
 
 .welcome {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 30px 0px;
+  column-gap: 50px;
+}
+
+.welcome-message,
+.welcome-image {
+  max-width: 400px;
+  flex: 1 1 0;
 }
 
 .welcome-message {
-  /* margin-right: 50px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.my-button {
+  width: fit-content;
+  background-color: #fda65d;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  padding: 5px 10px;
+  box-shadow: 0 0 2px 2px #b37441;
+}
+
+.my-button:hover {
+  background-color: #d2894d;
 }
 
 .welcome-image {
@@ -85,6 +107,7 @@ li {
 .card-display img {
   width: 300px;
   height: 200px;
+  /* Below lets you size images without distorting them */
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 0 4px 4px #e6bb71;
