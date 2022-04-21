@@ -17,6 +17,11 @@ a {
   color: #fda65d;
 }
 
+a:hover {
+  transition: color 0.2s ease-in;
+  color: #f8b782;
+}
+
 li {
   margin: 0;
 }
@@ -72,9 +77,12 @@ li {
   align-self: center;
   padding: 5px 10px;
   box-shadow: 0 0 2px 2px #b37441;
+  transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 
 .my-button:hover {
+  transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  box-shadow: 0 0 8px 8px #b37441;
   background-color: #d2894d;
 }
 
