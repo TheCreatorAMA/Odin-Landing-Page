@@ -50,6 +50,22 @@ li {
   box-shadow: 0px 2px 10px 2px #c45b26;
 }
 
+.hero-main-text {
+  font-size: 48px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.hero-secondary-text {
+  font-size: 18px;
+  margin: 0;
+}
+
+.content-header {
+  font-size: 36px;
+  font-weight: bold;
+}
+
 .welcome {
   display: flex;
   justify-content: center;
@@ -62,6 +78,10 @@ li {
 .welcome-image {
   max-width: 400px;
   flex: 1 1 0;
+}
+
+.welcome-message button {
+  margin-top: 10px;
 }
 
 .welcome-message {
@@ -139,7 +159,7 @@ li {
 
 .quote {
   font-style: italic;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 blockquote cite {
@@ -157,12 +177,18 @@ blockquote cite {
 
 .big-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
   background-color: #fda65d;
-  width: 50vw;
+  width: 75vw;
   margin: 50px;
   border-radius: 10px;
   box-shadow: 0 0 4px 4px #e6bb71;
+}
+
+.big-box-text {
+  width: 50%;
 }
 
 .footer {
